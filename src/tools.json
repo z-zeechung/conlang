@@ -1,0 +1,153 @@
+{
+    "word_tools": [
+        {
+            "name": "GenWord",
+            "homepage": "https://www.jasontank.net/wordgen.html",
+            "introduction": ""
+        },
+        {
+            "name": "ArtWords",
+            "homepage":"https://artwords.netlify.app/",
+            "introduction": ""
+        },
+        {
+            "name": "Langua",
+            "homepage": "https://susurrus-llc.github.io/langua/",
+            "introduction": "",
+            "icon":"/icons/Langua.png"
+        }
+    ],
+    "font_tools": [
+        {
+            "name": "FontForge",
+            "homepage": "https://fontforge.org/",
+            "icon": "https://fontforge.org/assets/img/logo-transparent.png",
+            "introduction": "开源免费的字体编辑工具，支持大多数字体格式和字体属性的编辑，需要一定的学习成本。",
+            "downloads": {
+                "windows": "/pkgs/FontForge-2023-01-01-Windows.exe",
+                "macos": "/pkgs/FontForge-2023-01-01-a1dad3e.app.dmg"
+            }
+        },
+        {
+            "name":"FontCreator",
+            "homepage": "https://www.high-logic.com/zh/font-editor/fontcreator",
+            "icon": "/icons/FontCreator.png",
+            "introduction": "功能全面的商业字体编辑工具，提供30天试用。"
+        },
+        {
+            "name": "BirdFont",
+            "homepage": "https://birdfont.org/",
+            "icon": "https://birdfont.org/images/birdfont_logo2.png",
+            "introduction": "免费字体编辑工具，功能精炼，易于上手。",
+            "downloads": {
+                "windows": "https://birdfont.org/download/birdfont-6.12.0-free.exe",
+                "macos": "https://birdfont.org/download/birdfont-6.12.0-free.dmg"
+            }
+        },
+        {
+            "name": "FontLab",
+            "homepage":"https://www.fontlab.com/zh/font-editor/fontographer/",
+            "introduction":"商业字体编辑器，支持各种复杂程度的项目，提供10~30天的试用。",
+            "icon": "/icons/FontLab.png"
+        },
+        {
+            "name": "方块字字体生成器",
+            "author": "子充ZeeChung",
+            "authorpage": "https://tieba.baidu.com/home/main?id=tb.1.11eca9d7.EBtxdQmBZZPzGUwzZ9CiXg?t=1628693040&fr=pb",
+            "homepage": "https://tieba.baidu.com/p/9577718154",
+            "introduction": "相当简陋的组字工具，功能完善中。",
+            "downloads": {
+                "windows": "/pkgs/character-font-generator.zip"
+            }
+        },
+        {
+            "name": "字統网组字",
+            "icon":"https://ziphoenicia-1300189285.cos.ap-shanghai.myqcloud.com/home_svg/zi-tools.svg",
+            "homepage":"https://zi.tools/?secondary=ids",
+            "introduction":"字統网的汉字组字程序，能够基于对汉字字形的描述进行组字和检索。"
+        }
+    ],
+    "ime_tools": [
+        {
+            "name": "MSKLC",
+            "homepage": "https://learn.microsoft.com/zh-cn/previous-versions/technet-magazine/hh967419(v=msdn.10)",
+            "introduction": "微软提供的Windows输入法制作工具，能够自定义键盘键位布局。",
+            "downloads": {
+                "windows": "https://download.microsoft.com/download/6/f/5/6f5ce43a-e892-4fd1-b9a6-1a0cbb64e6e2/MSKLC.exe"
+            }
+        },
+        {
+            "name": "RIME(小狼毫/鼠须管输入法)",
+            "homepage": "https://rime.im/",
+            "introduction": "著名的开源输入法引擎，其在Windows，MacOS，安卓平台的发行版分别为小狼毫输入法，鼠须管输入法和同文输入法。能够通过配置文件高度自定义，但需要较多学习成本。",
+            "icon": "/icons/RIME.png",
+            "downloads":{
+                "windows": "/pkgs/weasel-0.16.3.0-installer.exe",
+                "macos": "/pkgs/Squirrel-1.0.3.pkg",
+                "android": "/pkgs/com.osfans.trime-v3.3.3-0-g9e3689b3-arm64-v8a-release.apk"
+            }
+        },
+        {
+            "name": "Keyman",
+            "homepage": "https://keyman.com/",
+            "icon": "https://keyman.com/cdn/deploy/img/icon-developer.92f73c5226b1e921aab3b0f824ea8119.png",
+            "introduction": "面向全球数千种小语种的输入法定制工具，支持全平台，但输入法开发需要在Windows平台的Keyman Developer进行。",
+            "downloads": {
+                "windows": "https://downloads.keyman.com/developer/stable/17.0.335/keymandeveloper-17.0.335.exe"
+            }
+        },
+        {
+            "name": "C Keyboard",
+            "homepage": "https://apps.apple.com/is/app/c-keyboard-customize-keys/id1616276410",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/b3/67/2b/b3672bea-a660-3dec-356c-393348b8bd06/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp",
+            "introduction": "iOS平台的键盘定制工具，",
+            "downloads": {
+                "ios": "https://apps.apple.com/is/app/c-keyboard-customize-keys/id1616276410"
+            }
+        }
+    ],
+    "dict_tools": [
+        {
+            "name": "Lexique Pro",
+            "homepage": "https://software.sil.org/lexiquepro/",
+            "icon": "https://software.sil.org/lexiquepro/wp-content/uploads/sites/51/2024/05/Lexique-Pro-80png.png",
+            "introduction": "经典词典编辑工具，交互界面友好。",
+            "downloads":{
+                "windows": "https://software.sil.org/downloads/r/lexiquepro/Lexique%20Pro%203.6%20-%20Setup%20(with%20demo%20db).exe"
+            }
+        },
+        {
+            "name": "MdxBuilder",
+            "introduction": "历史悠久的词典编辑工具，能够基于HTML实现较大程度的自定义。",
+            "downloads":{
+                "windows": "/pkgs/MdxBuilder绿色汉化版.rar"
+            }
+        },
+        {
+            "name": "供人造语言使用的词典APP",
+            "homepage": "https://tieba.baidu.com/p/8904735633",
+            "author": "Vicoland",
+            "authorpage": "https://tieba.baidu.com/home/main?id=tb.1.8cb543e5.FGADSWbHDbf-0QB1Rd_r7w&fr=pb",
+            "introduction": "吧友Vicoland提供的移动端词典编辑工具。",
+            "downloads":{
+                "android": "/pkgs/单词软件.apk"
+            }
+        }
+    ],
+    "code_tools": [
+        {
+            "name": "Unicode",
+            "homepage": "http://www.unicode.org/charts/",
+            "introduction": "Unicode官方码表，能够查到电脑中的所有字符。",
+            "icon": "https://www.unicode.org/webscripts/logo60s2.gif"
+        }
+    ],
+    "translate_tools": [
+        {
+            "name": "LingoJam",
+            "homepage": "https://lingojam.com/",
+            "introduction": "翻译器定制页面。",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjYwREI1M0RFQjI3MTFFNTk4NUZEODE0OTRDNUUyRjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjYwREI1M0VFQjI3MTFFNTk4NUZEODE0OTRDNUUyRjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGNjBEQjUzQkVCMjcxMUU1OTg1RkQ4MTQ5NEM1RTJGMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGNjBEQjUzQ0VCMjcxMUU1OTg1RkQ4MTQ5NEM1RTJGMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Poccp8cAAAfqSURBVHjapFd5bBx3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"
+        }
+    ]
+}
