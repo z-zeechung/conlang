@@ -1,6 +1,6 @@
 import { Avatar, Button, Card, Flex, List, Tag, Typography } from 'antd'
 import Tools from "./tools.json"
-import { AndroidFilled, AppleFilled, BaiduOutlined, GithubFilled, GlobalOutlined, LinuxOutlined, MailOutlined, WindowsFilled} from '@ant-design/icons'
+import { AndroidFilled, AppleFilled, BaiduOutlined, GithubFilled, GlobalOutlined, LinuxOutlined, MailOutlined, UserOutlined, WindowsFilled} from '@ant-design/icons'
 import { useWindowSize } from './utils'
 
 function App() {
@@ -8,9 +8,9 @@ function App() {
   const isMobile = useWindowSize().width <= 600
 
   return <Flex vertical align='center' gap={"middle"}>
-    <Flex vertical align='center' >
+    <Flex vertical align='center' gap={"small"}>
       <Typography.Title level={2} style={{fontFamily:"serif"}}>造语工具</Typography.Title>
-      <Typography.Text type='secondary'>
+      <Typography.Text type='secondary' style={{textAlign:"center"}}>
         如果链接失效或页面出现错误，或者有要补充的工具，请联系我：
         <a href='https://tieba.baidu.com/home/main?id=tb.1.11eca9d7.EBtxdQmBZZPzGUwzZ9CiXg?t=1628693040&fr=pb' target="_blank">
           <Tag icon={<BaiduOutlined/>} color='blue'>贴吧：子充ZeeChung</Tag>
@@ -20,7 +20,7 @@ function App() {
           <Tag icon={<GithubFilled/>} color='#000'>z-zeechung/conlang</Tag>
         </a>
       </Typography.Text>
-      <Typography.Text>by&nbsp;
+      <Typography.Text style={{textAlign:"center"}}>by&nbsp;
         <a href='https://tieba.baidu.com/home/main?id=tb.1.11eca9d7.EBtxdQmBZZPzGUwzZ9CiXg?t=1628693040&fr=pb' target="_blank">
           子充ZeeChung
         </a>
@@ -33,32 +33,32 @@ function App() {
     </Flex>
     {!isMobile&&<>
       <Card title="单词生成" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.word_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
       <Card title="字体制作" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.font_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
       <Card title="输入法制作" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.ime_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
       <Card title="词典编纂" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.dict_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
       <Card title="码表" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.code_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
       <Card title="翻译器" style={{width:"100%"}}>
-        <Flex gap={"small"} wrap>
+        <Flex gap={"small"} wrap justify='center'>
           {Tools.translate_tools.map((tool, idx)=><ToolCard tool={tool} key={idx}/>)}
         </Flex>
       </Card>
@@ -107,13 +107,14 @@ function App() {
 function ToolCard(props: { tool: any}) {
   const tool = props.tool
   return <Card 
-    style={{width:380}}
+    style={{width:360}}
+    styles={{header:{paddingRight:4}}}
     title={<Flex gap={"middle"} align='center'>
       {tool?.icon?<Avatar src={tool.icon} shape={"square"}/>:undefined}
       {tool?.name}
     </Flex>}
     extra={<>
-      {tool?.author&&<a href={tool?.authorpage?tool.authorpage:undefined} target="_blank"><Tag>{tool.author}</Tag></a>}
+      {tool?.author&&<a href={tool?.authorpage?tool.authorpage:undefined} target="_blank"><Tag icon={<UserOutlined/>}>{tool.author}</Tag></a>}
       {tool.homepage&&<a href={tool.homepage} target="_blank"><Tag color='green' icon={<GlobalOutlined/>}>主页</Tag></a>}
     </>}
   >
@@ -121,9 +122,9 @@ function ToolCard(props: { tool: any}) {
       <Typography.Text>{tool?.introduction}</Typography.Text>
       <Flex gap={"small"} wrap>
         {tool?.downloads?.windows&&<ToolDownloadButton url={tool.downloads.windows} platform="windows"/>}
+        {tool?.downloads?.android&&<ToolDownloadButton url={tool.downloads.android} platform="android"/>}
         {tool?.downloads?.linux&&<ToolDownloadButton url={tool.downloads.linux} platform="linux"/>}
         {tool?.downloads?.macos&&<ToolDownloadButton url={tool.downloads.macos} platform="macos"/>}
-        {tool?.downloads?.android&&<ToolDownloadButton url={tool.downloads.android} platform="android"/>}
         {tool?.downloads?.ios&&<ToolDownloadButton url={tool.downloads.ios} platform="ios"/>}
       </Flex>
     </Flex>
@@ -134,7 +135,7 @@ function renderItem(item:any, idx:number){
     <List.Item.Meta
       title={item.name}
       description={<>
-        {item?.author&&<a href={item?.authorpage?item.authorpage:undefined} target="_blank"><Tag>{item.author}</Tag></a>}
+        {item?.author&&<a href={item?.authorpage?item.authorpage:undefined} target="_blank"><Tag icon={<UserOutlined/>}>{item.author}</Tag></a>}
         {item.homepage&&<a href={item.homepage} target="_blank"><Tag color='green' icon={<GlobalOutlined/>}>主页</Tag></a>}
       </>}
       avatar={item?.icon?<Avatar src={item.icon} shape={"square"}/>:undefined}
@@ -144,9 +145,9 @@ function renderItem(item:any, idx:number){
     <p/>
     <Flex gap={"small"} wrap>
       {item?.downloads?.windows&&<ToolDownloadButton url={item.downloads.windows} platform="windows"/>}
+      {item?.downloads?.android&&<ToolDownloadButton url={item.downloads.android} platform="android"/>}
       {item?.downloads?.linux&&<ToolDownloadButton url={item.downloads.linux} platform="linux"/>}
       {item?.downloads?.macos&&<ToolDownloadButton url={item.downloads.macos} platform="macos"/>}
-      {item?.downloads?.android&&<ToolDownloadButton url={item.downloads.android} platform="android"/>}
       {item?.downloads?.ios&&<ToolDownloadButton url={item.downloads.ios} platform="ios"/>}
     </Flex>
   </List.Item>
@@ -157,7 +158,7 @@ function ToolDownloadButton(props:{url:any, platform:string}){
     "linux": <LinuxOutlined/>,
     "macos": <AppleFilled/>,
     "android": <AndroidFilled/>,
-    "ios": <img src='/iOS.svg' width={14} height={14}/>
+    "ios": <img src='/iOS.svg' width={12} height={12}/>
   }[props.platform]
   const name = {
     "windows": "Windows",

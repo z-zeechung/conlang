@@ -8,7 +8,9 @@
         {
             "name": "ArtWords",
             "homepage":"https://artwords.netlify.app/",
-            "introduction": "中文界面的造词工具。"
+            "introduction": "中文界面的造词工具。",
+            "author": "语灯人小瑞瑞",
+            "authorpage": "https://tieba.baidu.com/home/main?id=tb.1.2160ac2.9fiaY3sbnejTgdTFm31CZg?t=1675614815&fr=pb"
         },
         {
             "name": "Langua",
@@ -77,9 +79,9 @@
             }
         },
         {
-            "name": "RIME(小狼毫/鼠须管输入法)",
+            "name": "RIME",
             "homepage": "https://rime.im/",
-            "introduction": "著名的开源输入法引擎，其在Windows，MacOS，安卓平台的发行版分别为小狼毫输入法，鼠须管输入法和同文输入法。能够通过配置文件高度自定义，但需要较高学习成本。",
+            "introduction": "著名的开源输入法引擎，能够通过配置文件高度自定义，但需要较高学习成本。",
             "icon": "/icons/RIME.png",
             "downloads":{
                 "windows": "/pkgs/weasel-0.16.3.0-installer.exe",
@@ -124,7 +126,7 @@
             }
         },
         {
-            "name": "供人造语言使用的词典APP",
+            "name": "单词软件",
             "homepage": "https://tieba.baidu.com/p/8904735633",
             "author": "Vicoland",
             "authorpage": "https://tieba.baidu.com/home/main?id=tb.1.8cb543e5.FGADSWbHDbf-0QB1Rd_r7w&fr=pb",
